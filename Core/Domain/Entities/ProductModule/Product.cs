@@ -10,5 +10,5 @@
         public int TypeId { get; set; } // fk
         public ProductBrand? ProductBrand { get; set; } = null!;
         public int? BrandId { get; set; } // fk
-    }
+    } 
 }

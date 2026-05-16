@@ -1,14 +1,9 @@
 ﻿using Domain.Entities.IdentityModule;
 using Domain.Exceptions;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Shared.Dtos.IdentityModule;
 using Shared.Dtos.OrderModule;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using static Shared.HelperClasses.GetIpHelper;
 
 namespace Services.Implementations

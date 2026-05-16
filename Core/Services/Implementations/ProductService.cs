@@ -20,7 +20,7 @@ namespace Services.Implementations
 
             var specifications = new ProductWithBrandAndTypeSpecifications(parameters);
             var products = await _unitOfWork.GenericRepository<Product, int>().GetAllAsync(specifications);
-             var productResult =_mapper.Map<IEnumerable<ProductResultDto>>(products);
+            var productResult =_mapper.Map<IEnumerable<ProductResultDto>>(products);
             var pagecount = productResult.Count();
             var countSpecifications = new ProductCountSpecification(parameters);
             var totalCount = await _unitOfWork.GenericRepository<Product, int>().CountAsync(countSpecifications);

@@ -44,7 +44,8 @@ namespace E_Commerce.Extensions
                         new string[]{}
                     }
                 });
-            }); services.Configure<ApiBehaviorOptions>(option =>
+            });
+            services.Configure<ApiBehaviorOptions>(option =>
             {
                 option.InvalidModelStateResponseFactory = ApiResponseFactory.CustomValidationErrorResponse;
             });

@@ -1,15 +1,4 @@
-using Domain.Contracts;
 using E_Commerce.Extensions;
-using E_Commerce.Factories;
-using E_Commerce.Middlewares;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Presistance.Data;
-using Presistance.Repositories;
-using Service.Abstraction.Contracts;
-using Services;
-using Services.Implementations;
-using System.Reflection;
 
 namespace E_Commerce
 {
